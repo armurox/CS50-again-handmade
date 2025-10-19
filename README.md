@@ -1,0 +1,2 @@
+# CS50 Again Handmade
+This is me doing CS50 again (I have done the original in 2023), but this time, with 2 years having gone by, want to give it a shot by solving all the problems again, this time with me writing all the makefiles, all the tests, and all the library helper functions. Should be fun!
