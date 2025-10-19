@@ -1,6 +1,6 @@
 CC := gcc
 INCLUDE_FLAGS := -I./headers
-C_FLAGS := -Wall -Wextra -pedantic -lm $(INCLUDE_FLAGS)
+C_FLAGS := -Wall -Wextra -pedantic $(INCLUDE_FLAGS)
 
 .PHONY: all clean
 
@@ -8,28 +8,22 @@ all: mario name hello integers credit
 
 mario: mario.o cs50.o
 	$(CC) $^ -o $@
-	rm -rf *.o
 
 hello: hello.o
 	$(CC) $^ -o $@
-	rm -rf *.o
 
 
 name: name.o cs50.o
 	$(CC) $^ -o $@
-	rm -rf *.o
 
 integers: integers.o cs50.o
 	$(CC) $^ -o $@
-	rm -rf *.o
 
 credit: credit.o credit_helper.o cs50.o
 	$(CC) $^ -o $@
-	rm -rf *.o
 
 test: test.o credit_helper.o cs50.o
 	$(CC) $^ -o $@
-	rm -rf *.o
 
 
 # Object files
