@@ -15,7 +15,7 @@ int main(void)
 int get_height(void)
 {
     int height;
-    while ((height = get_int("Height: ")) < 0);
+    while ((height = get_int("Height: ")) <= 0);
     return height;
 }
 
@@ -46,12 +46,6 @@ void draw_pyramid(int height)
         for (int i = 0; i < hashes; i++)
         {
             printf("#");
-        }
-
-        // Print spaces
-        for (int i = 0; i < spaces; i++)
-        {
-            printf(" ");
         }
         
         printf("\n");
