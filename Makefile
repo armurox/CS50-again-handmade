@@ -43,3 +43,5 @@ clean:
 	rm -rf name
 	rm -rf credit
 	rm -rf credit_test
+	rm -rf cash_test
+	rm -rf cash
