@@ -3,7 +3,7 @@
 #include <string.h>
 #include <math.h>
 #include "credit_helper.h"
-#include "test.h"
+#include "credit_test.h"
 
 void test_number_of_digits(void)
 {
